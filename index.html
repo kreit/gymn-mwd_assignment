@@ -9,7 +9,7 @@
   <title>Human Nutrition | Support human life and health</title>
   <meta http-equiv="content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-  <!-- scripts -->
+  <!-- scripts - primary -->
   <!-- ... -->
   <!-- webfonts -->
   <!-- ... -->
@@ -57,52 +57,48 @@
       font-size: 16px;  
     }
     body {
-      font-family: sans-serif;   
-      padding: 0 2rem;
-      color: #1a1a1a;
-      background-image: url(back-image.jpg);
-      background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: hsla(0, 0%, 25%, 1);
     }
 
     h1 {
-      font-size: 6rem;
-      line-height: 1;
-      font-weight: 100;
-      font-style: italic;
-      letter-spacing: -0.2rem;
+      margin-left: -0.3rem;
       margin-bottom: 1rem;
-      margin-left: -0.2rem;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 6em;
+      font-weight: 500;
+      line-height: 0.9;
+      letter-spacing: -0.35rem;
     }  
-    h4  {      
+    h2  {     
+      margin-bottom: 1rem; 
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 2em;
+      font-weight: 400;
+    }  
+    h3  {    
+      margin-bottom: 1rem; 
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 2em;
+      font-weight: 400;
+    }
+    h4 {
       font-size: 2.5rem;
       letter-spacing: -0.1rem;
     }
-    a {
-      color: #1a1a1a;
-    }
     p {
-      font-size: 1.2rem; 
-      line-height: 1.5;
-      margin-bottom: 2rem;
+      font-size: 1.25em;
+      line-height: 1.2;
+      letter-spacing: -0.02rem;
     }
-    p > a:after {
-      position: absolute;
-      bottom: -0.1rem;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      content: '';
-      border-bottom: 0.2rem solid #ccc;
-      opacity: 0.5;
+    a {
+      color: hsla(0, 0%, 25%, 1);
     }
-    p > a:hover:after {
-      width: 110%;
-      padding: 0.75rem;
-      left: -5%;
-      background-color: #ccc;
-      border-bottom: 0 solid transparent;
+    a:hover {
+      /*color: hsla(0, 0%, 80%, 1); */
     }
 
 
@@ -110,94 +106,241 @@
     /* step 1 */  /* equals to X px , for minimum screen size */
 
     .content { 
-      max-width: 72rem;
       min-height: 100%;
       margin: 0 auto;
-      padding: 0 6rem;
-      background-color: white;
+      background-color: hsla(0, 0%, 95%, 1);
     }
-    .wrap {
-      position: relative;  
-      max-width: 60rem;
-      margin: 0 auto;
-    }
-    nav {    
-      z-index: 1;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      border-bottom: 0.25rem solid #1a1a1a;
-    }
-      nav aside {
-        position: absolute;
-        top: 2rem;
-        left: 0;
-        padding-top: 0.1rem;
+      .wrap {
+        position: relative;  
+        max-width: 66em;
+        margin: 0 auto;
       }
-        nav h4  {      
-          margin-left: -0.1rem;
-        }
-      nav section {
-        text-align: right;
-      }
-      li {
-        display: inline-block;
-      }
-        li > a {
-          display: block;
-          padding: 1rem 1rem;
-          font-weight: 600;
-          font-size: 90%;
-          letter-spacing: 0.025rem;
-          background-color: white;
-          border-right: 0.15rem solid #f2f2f2;
-        }
-        li:last-child > a {
 
+        nav {  
+          padding-top: 2em;     
+          /*border-bottom: 0.25rem solid hsla(360, 15%, 25%, 1);*/
+          z-index: 1;
         }
-        li > a:hover {
-          text-decoration: inherit;
-          background-color: #f2f2f2;
+          nav > div {
+            display: flex;
+            justify-content: space-between;
+            /*background-color: hsla(56, 58%, 35%, 1);*/ /*temporary*/
+          }
+          nav aside {
+
+          }
+            nav h4 a  { 
+              font-weight: 600;
+              text-decoration: none;
+              color: hsla(0, 0%, 50%, 1);
+            }
+            nav h4 a:hover  { 
+              font-weight: 600;
+              color: hsla(0, 0%, 25%, 1);
+            }
+          nav section {   
+
+          }
+          nav li {
+            display: inline-flex;
+          }
+          nav li > a {
+            padding: 1em;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            color: hsla(0, 0%, 50%, 1);
+            background-color: hsla(0, 0%, 95%, 1);
+          }
+          nav li:hover > a {
+            color: hsla(0, 0%, 25%, 1);
+            background-color: hsla(0, 0%, 100%, 1);
+            box-shadow: 0 0.2rem 0 hsla(0, 0%, 50%, 1);
+          }
+            nav li:nth-child(2):hover > a {
+              /*background-color: hsla(15, 90%, 90%, 1);*/
+              box-shadow: 0 0.2rem 0 hsla(15, 90%, 50%, 1);
+            }
+            nav li:nth-child(3):hover > a {
+              /*background-color: hsla(40, 100%, 90%, 1);*/
+              box-shadow: 0 0.2rem 0 hsla(40, 100%, 60%, 1);
+            }
+            nav li:nth-child(4):hover > a {
+              /*background-color: hsla(170, 30%, 90%, 1);*/
+              box-shadow: 0 0.2rem 0 hsla(178, 56%, 43%, 1);
+            }
+        header {
+          padding: 6em 2em;
+          background-color: hsl(220, 25%, 25%);
         }
-    header {
-      padding-bottom: 8rem;
-    }
-      header section {
-        max-width: 40rem;
-        height: 18rem;
-        margin: 0 16.6% 4rem 16.6%;
-        background-image: url(http://img7.mynet.com/yemek/import/20160602/05194354/fiber-facts.jpg);
-        background-size: 140%;
-        background-position: 100% 0%;
-        background-repeat: no-repeat;
-      }
-      header h1 {
+          header section {      
+            margin: 0 auto;
+            margin-bottom: 4rem;
+          }
+          header section:last-child {
+            margin-bottom: 0;
+          }
+          header section {
+            text-align: left;            
+          }
+            header section h1 {
+              color: hsla(0, 0%, 100%, 1);
+            }
+            header section p {
+              max-width: 50%;
+              color: hsl(220, 25%, 70%);
+            }
+            header section p:last-child {
+              margin-bottom: 0;
+            }
 
-      }
-      header p {
-        padding: 0 16.6%;
-      }
-      header p span {
-        font-size: 150%;
-        line-height: 1.3;
-        margin-bottom: 2rem;
-      }
-    main {
+        main {
+          padding: 0 2em 6em 2em;
+          background-color: hsl(220, 25%, 25%);
+        }          
+          main section { 
+            margin-bottom: 2rem; 
+            padding-bottom: 2rem;
+            box-shadow: 0 0.2rem 0 hsla(220, 25%, 50%, 0.25);
+          }         
+          main section:first-child {
+            margin-bottom: 4rem;
+            box-shadow: none;
+          }      
+          main section:last-child {
+            /*margin-bottom: 0;*/
+          }
+            main section:first-child h2 {  
+              margin-left: 0;  
+              margin-bottom: 2rem;     
+            }
+            main section h2 {  
+              margin-bottom: 1rem;     
+              color: hsl(220, 25%, 100%);
+            }   
+            main section > p {   
+              width: 75%;    
+              margin-left: 2rem;  
+              color: hsl(220, 25%, 100%);
+            }
+            main section ul {
+              display: flex;
+            }
+            main section > ul > a {
+              position: relative;
+              flex: 1;              
+              margin-right: 1rem;
+              padding: 4rem 4rem 6rem 4rem;
+              border-radius: 0.25rem; 
+              background-color: hsla(0, 0%, 100%, 1);
+              box-shadow: 0 0.2rem 0 hsl(220, 25%, 50%);
+            }
+            main section > ul > a:last-child {
+              margin-right: 0;
+            }
+            main section > ul > a {
+              /*margin-top: 0.2rem;*/
+            } 
+            main section > ul > a:nth-child(1):hover {
+              background-color: hsla(15, 90%, 50%, 1);
+              box-shadow: 0 0rem 0 hsla(15, 90%, 50%, 1);
+            }
+            main section > ul > a:nth-child(2):hover {
+              background-color: hsla(40, 100%, 60%, 1);
+              box-shadow: 0 0rem 0 hsla(40, 100%, 60%, 1);
+            }
+            main section > ul > a:nth-child(3):hover {
+              background-color: hsla(178, 56%, 43%, 1);
+              box-shadow: 0 0rem 0 hsla(178, 56%, 43%, 1);
+            }
+            main section ul a li {
+              display: flex;
+              flex-wrap: wrap;
+            }
+            main section a li h3 {              
+              margin-bottom: 0.5rem;
+            }
+            main section a:hover li h3 {              
+              color: hsla(0, 0%, 100%, 1);
+            }
+            main section a li hr {
+              width: 100%;
+              height: 0.2rem;
+              margin-bottom: 1rem;
+              background-color: hsl(220, 25%, 25%);
+            }     
+            main section a:nth-child(1) li hr {
+              height: 0.2rem;
+              background-color: hsla(15, 90%, 50%, 1);
+            }            
+            main section a:nth-child(2) li hr {
+              height: 0.2rem;
+              background-color: hsla(40, 100%, 60%, 1);
+            }
+            main section a:nth-child(3) li hr {
+              height: 0.2rem;
+              background-color: hsla(178, 56%, 43%, 1);
+            }
+            main section a:hover li hr {
+              height: 0.2rem;
+              background-color: hsla(0, 0%, 100%, 0.25);
+            }
+            main section a li p {
+              margin-bottom: 2rem;
+              line-height: 1.15;
+            }
+            main section a:hover li p {              
+              color: hsla(0, 0%, 100%, 1);
+            }
+            main section a li p:last-child {
+              margin-bottom: 0;
+              padding: 0.5rem 1rem;
+              border-radius: 20em;
+              font-size: 75%;
+              font-weight: 600;
+              text-transform: uppercase;
+              letter-spacing: 0.15em;
+              color: hsla(0, 0%, 100%, 1);
+              position: absolute;
+              left: 4rem;
+              bottom: 4rem;
+            }
+            main section a:nth-child(1) li p:last-child {
+              background-color: hsla(15, 90%, 50%, 1);
+            }
+            main section a:nth-child(2) li p:last-child {
+              background-color: hsla(40, 100%, 60%, 1);
+            }
+            main section a:nth-child(3) li p:last-child {
+              background-color: hsla(178, 56%, 43%, 1);
+            }
+            main section a:hover li p:last-child {
+              color: hsl(219, 25%, 25%);
+              background-color: hsla(0, 0%, 100%, 1);
+            }
+        footer {          
+          padding: 4em 2em 8em 2em;
+          background-color: hsl(220, 25%, 20%);
+        }
+          footer > div {
 
-    }
-    footer {
-      border-top: 0.25rem solid #f2f2f2;
-      padding-top: 1rem;
-      padding-bottom: 8rem;
-    }
-      footer > a,
-      footer > p {
-        color: #808080;        
-      }
-      footer > p {
-        font-size: 90%;
-        letter-spacing: 0.025rem;
-        line-height: 1.25;
-      }
+          }
+          footer p {
+            width: 75%;
+            margin-bottom: 1rem;
+          }
+          footer p,
+          footer a {
+            font-size: 1em;
+            color: hsl(218, 26%, 31%);
+          }
+          footer a {            
+            text-decoration: underline;
+            color: hsl(218, 26%, 31%);
+          }
+          footer a:hover {            
+            color: hsl(219, 25%, 50%);
+          }
 
 
 
@@ -230,69 +373,133 @@
 
   <div class="content">
 
-  <nav class="wrap">
-    <aside alt="logo"><h4><a href="#" alt="logo">Human Nutrition</a></h4></aside>
-    <section>
-      <ul>
-        <li>
-          <a href="overview.html" alt="Overview">Overview</a>
-        </li><!--
-     --><li>
-          <a href="nutrients.html" alt="Nutrients">Nutrients</a>
-        </li><!--
-     --><li>
-          <a href="malnutrition.html" alt="Malnutrition">Malnutrition</a>
-        </li><!--
-     --><li>
-          <a href="nutrition-policy.html" alt="Nutrition policy">Nutrition policy</a>
-        </li><!--
-     --><li>
-          <a href="history.html" alt="History">History</a>
-        </li>
-      </ul>
-    </section>
-  </nav>
+    <nav>
+      <div class="wrap">
+        <aside alt="logo"><h4><a href="#" alt="logo">Human Nutrition</a></h4></aside>
+        <section>
+          <ul>
+            <li>
+              <a href="" alt="Overview">Overview</a>
+            </li><!--
+         --><li>
+              <a href="" alt="Nutrients">Nutrients</a>
+            </li><!--
+         --><li>
+              <a href="" alt="Malnutrition">Malnutrition</a>
+            </li><!--
+         --><li>
+              <a href="" alt="Nutrition policy">Policy</a>
+            </li><!--
+         --><li>
+              <a href="" alt="History">History</a>
+            </li><!-- -->
+          </ul>
+        </section>
+      </div>
+    </nav>
 
-  <header class="wrap">
-    <section></section>
-    <h1>Human Nutrition</h1>
-    <p>
-      <span>
-        <i>Referring to the provision of essential nutrients necessary to support human life and health. </i>
-      </span>
-    </p>
-    <p>
-      Generally, people can survive up to 40 days without food, a period largely depending on the amount of water consumed, stored body fat, muscle mass and <a href="https://www.ncbi.nlm.nih.gov/books/NBK19932/"><i>genetic factors</i></a>.
-    </p>
-    <p>
-      <span><i>Poor nutrition</i></span><br>
-        A chronic problem often linked to poverty, poor nutrition understanding and practices, and deficient sanitation and food security. <!-- Lack of proper nutrition contributes to lower academic performance, lower test scores, and eventually less successful students and a less productive and competitive economy.  -->
-    </p>
-    <p>
-      <span><i>Malnutrition</i></span><br> 
-        With its consequences are immense contributors to deaths and disabilities worldwide. 
-    </p>
-    <p>
-      <span><i>Good nutrition</i></span><br>
-        Promoting it helps children grow, promotes human development and advances economic growth and eradication of poverty.
-    </p>
-  </header>
+    <header>
+      <div class="wrap">
+        <section>
+          <h1>Respect Life, <br>Grow Your Health!</h1>
+          <p>
+            <i>Human nutrition refers to the provision of essential nutrients necessary to support human life and health. </i>
+          </p>
+        </section>
+      </div>
+    </header>
 
-  <main class="wrap">
+    <main>
+      <div class="wrap">
+        <section>
+          <h2>
+            Three topics to discuss about:
+          </h2>
+          <ul>
+            <a href="">
+              <li>
+                <h3>Nutrients</h3>
+                <hr>
+                <p>There are seven major classes of nutrients: carbohydrates, fats, fiber, minerals, proteins, vitamins, and water. </p>
+                <p>More</p>              
+              </li>
+            </a><!--
+         --><a href="">
+              <li>
+                <h3>Malnutrition</h3>
+                <hr>
+                <p>Immense contributors to deaths and disabilities worldwide</p>
+                <p>More</p>
+              </li>
+            </a><!--
+         --><a href="">
+              <li>
+                <h3>Policy</h3>
+                <hr>
+                <p>Good nutrition helps children grow, promotes human development and advances economic growth and eradication of poverty</p>
+                <p>More</p>
+              </li>
+            </a>
+          </ul>
+        </section>
+        <section>
+          <h2>
+            Poor nutrition
+          </h2>
+          <p>
+            A chronic problem often linked to poverty, poor nutrition understanding and practices, and deficient sanitation and food security. Lack of proper nutrition contributes to lower academic performance, lower test scores, and eventually less successful students and a less productive and competitive economy. 
+          </p>
+        </section>
+        <section>
+          <h2>
+            Malnutrition consequences
+          </h2>
+          <p>
+            Immense contributors to deaths and disabilities worldwide. Promoting good nutrition helps children grow, promotes human development and advances economic growth and eradication of poverty.
+          </p>
+        </section>
+        <section>
+          <h2>
+            Promoting good nutrition
+          </h2>
+          <p>
+            Helps children grow, promotes human development and advances economic growth and eradication of poverty.
+          </p>
+        </section>
+      </div>
+    </main>
 
-    <section>
-
-    </section>
-
-  </main>
-
-  <footer class="wrap">
-    <p>
-      Webpage content is originally from Wikipedia article "<a href="https://en.wikipedia.org/wiki/Human_nutrition" alt="link to wikipedia article" target="_blank">Human Nutrition</a>", by more than 400 contributers, from Wikipedia community. That is quite many to list them all, but some top contributers are: <i>Zefr, Ozzie10aaaa, Lbockhorn, SummerPhD, ClueBotNG and 173.162.2.161</i>. There has been small changes to original content.
-    </p>
-  </footer>
+    <footer>
+      <div class="wrap">      
+        <p>
+          Webpage content is originally from Wikipedia article "<a href="https://en.wikipedia.org/wiki/Human_nutrition" alt="link to wikipedia article" target="_blank">Human Nutrition</a>", by more than 400 contributers, from Wikipedia community.
+        </p>    
+        <p>
+          That is quite many to list them all, but some top contributers are: <i>Zefr, Ozzie10aaaa, Lbockhorn, SummerPhD, ClueBotNG and 173.162.2.161</i>. There has been small changes to original content.
+        </p>  
+        <p>
+          There has been small changes to original content.
+        </p>
+      </div>
+    </footer>
 
   </div>
+
+
+
+  <!-- scripts - secondary -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <!-- expand drop-down -->
+  <script type="text/javascript">
+    $(".toggle").click(function(event){
+        $(this).toggleClass('read-less');
+        $(this).prev('.more').toggleClass('show');
+        event.preventDefault()
+    });    
+  </script>
+  <!--   - - -   -->
+
+
 
 </body>
 </html>
